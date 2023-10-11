@@ -6,18 +6,21 @@ padding: 0;
 }
 
 body{
-  color: #545454;
+  background-color: rgb(255, 225, 202);
+  color: rgb(45, 34, 250);
   display: flex;
   font-family: sans-serif;
   justify-content: center;
 }
 .container{
-  background-color: #14BDAC;
+  background: linear-gradient(3deg, #0a0a0a, #3a4452);
+  
   margin:40px;
   padding: 50px;
   border-radius: 25px;
-  /* width: 500px;
-  height: 500px; */
+  height: auto;
+  width: auto;
+  
 }
 .title{
   margin-top: 0px;
@@ -25,7 +28,7 @@ body{
 }
 
 .title span{
-  color: #F2EBD3;
+  color: yellow !important;
 }
 
 .status-action{
@@ -36,7 +39,7 @@ body{
   height: 30px;
 }
 .status span{
-  color: #f2ebd3;
+  color: yellow;
 }
 
 .reset{
@@ -44,26 +47,30 @@ body{
 }
 
 .reset:hover{
-  color: #F2EBD3;
+  color: #ffffff;
 }
 
 .game-grid{
-  background: #0da192;
+  
   display:grid;
   grid-template-columns: repeat(3,1fr);
   grid-template-rows: repeat(3,1fr);
-  grid-gap: 10px;
+  grid-gap: 20px;
   margin-top: 30px;
-
+  
 }
 
 .game-cell{
   display: flex;
   justify-content: center;
   align-items: center;
+  
+  border-radius: 19%;
   height: 100px;
   width: 100px;
-  background-color: #14BDAC;
+  width: 100px;
+  background-color: #3a4452;
+  box-shadow: -5px -6px 15px rgb(39, 38, 38);
   cursor: pointer;
 }
 
@@ -73,7 +80,7 @@ body{
 }
 .O::after{
   content: '○';
-  color: #f2ebd3;
+  color: yellow;
   font-size: 125px;
 }
 .won::after{
@@ -123,14 +130,26 @@ body{
 a{
   color:black;
 }
+
+.fa-linkedin{
+  color: white;
+}
+
+.fa-github{
+  color: white;
+}
+.fa-youtube{
+  color: white;
+}
+
 .fa-linkedin:hover{
-  color: orange;
+  color: rgb(33, 118, 183);
 }
 .fa-github:hover{
   color: orange;
 }
 .fa-youtube:hover{
-  color: orange;
+  color: rgb(233, 18, 18);
 }
 .cp{
   justify-content: center;
@@ -146,7 +165,9 @@ a{
   width: 50px;
   text-decoration: none;
 }
-
+.cp{
+  color: white;
+}
 footer{
   justify-content: center;
   text-align: center;
